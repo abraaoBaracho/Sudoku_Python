@@ -15,7 +15,7 @@ class Menu:
             imagem_original = Image.open("img/sudoku.png")  # caminho da imagem
             imagem_redimensionada = imagem_original.resize((600, 400))
             self.imagem = ImageTk.PhotoImage(imagem_redimensionada)
-            self.label_imagem = tk.Label(self.janela, image=self.imagem, bg="#2D3332")
+            self.label_imagem = tk.Label(self.janela, image=self.imagem, bg="#BEC3C2")
             self.label_imagem.pack(pady=10)
         except Exception as e:
             print(f"Erro ao carregar imagem: {e}")
